@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4b405c">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="453dp"
+        android:id="@+id/list_view_rooms"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.0"
+        card_view:layout_editor_absoluteX="8dp"></ListView>
+
+    <EditText
+        android:id="@+id/ed_room_name"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Напишите название канала"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#60FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fl_add_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:elevation="10dp"
+        app:backgroundTint="@color/colorAccentThree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/colorAccent"
+        app:srcCompat="@drawable/fab_plus_icon" />
+
+</android.support.constraint.ConstraintLayout>

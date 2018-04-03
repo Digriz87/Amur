@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#4b405c">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    >
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="5dp"
+    >
+
+<LinearLayout
+    android:id="@+id/linear_layout_for_gallery"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    >
+
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_first"
+        android:elevation="8dp"
+        android:layout_marginLeft="5dp"
+        card_view:cardCornerRadius="4dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <ImageView
+            android:id="@+id/image_add_photo"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_add_photo"
+            />
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+</HorizontalScrollView>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/about_yourself_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#9b92b3"
+        app:hintTextAppearance="@style/MyEditText"
+        android:layout_marginTop="10dp"
+        >
+
+    <EditText
+        android:id="@+id/ed_about_yourself"
+        android:layout_height="100dp"
+        android:layout_width="300dp"
+
+        android:layout_gravity="center"
+        android:hint="Расскажите о себе"
+        android:textColorHint="#9b92b3"
+        android:textColor="#9b92b3"
+
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:theme="@style/MyEditText"
+        android:textSize="20sp"
+        >
+    </EditText>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#9b92b3"
+        app:hintTextAppearance="@style/MyEditText"
+
+        >
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+
+        android:layout_gravity="center"
+        android:hint="Имя"
+        android:textColorHint="#9b92b3"
+        android:textColor="#9b92b3"
+        android:inputType="text"
+        android:digits="абвгдеёжзийклмнопрстуфхцчшщъыьэюя АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
+        android:maxLength="10"
+        android:theme="@style/MyEditText"
+        android:textSize="20sp"
+        >
+    </EditText>
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#9b92b3"
+        app:hintTextAppearance="@style/MyEditText"
+
+        >
+
+        <EditText
+            android:id="@+id/ed_length"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:hint="Ваш рост (190)"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColorHint="#9b92b3"
+            android:textColor="#9b92b3"
+            android:theme="@style/MyEditText"
+            android:textSize="20sp"
+            >
+        </EditText>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#9b92b3"
+        app:hintTextAppearance="@style/MyEditText"
+        >
+
+        <EditText
+            android:id="@+id/ed_weight"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:hint="Ваш вес (кг)"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColorHint="#9b92b3"
+            android:textColor="#9b92b3"
+            android:theme="@style/MyEditText"
+            android:textSize="20sp"
+            >
+        </EditText>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#9b92b3"
+        app:hintTextAppearance="@style/MyEditText"
+        >
+
+        <EditText
+            android:id="@+id/ed_color_hair"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:hint="Ваш цвет волос"
+            android:inputType="text"
+            android:maxLength="10"
+            android:textColorHint="#9b92b3"
+            android:textColor="#9b92b3"
+            android:digits="абвгдеёжзийклмнопрстуфхцчшщъыьэюя АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
+            android:theme="@style/MyEditText"
+            android:textSize="20sp"
+            >
+        </EditText>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#9b92b3"
+        app:hintTextAppearance="@style/MyEditText"
+        >
+
+        <EditText
+            android:id="@+id/ed_tall"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:hint="Ваше телосложение"
+            android:inputType="text"
+            android:maxLength="15"
+            android:textColorHint="#9b92b3"
+            android:textColor="#9b92b3"
+            android:theme="@style/MyEditText"
+            android:textSize="20sp"
+            >
+        </EditText>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        app:hintTextAppearance="@style/MyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#9b92b3"
+        >
+
+        <EditText
+            android:id="@+id/ed_national"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:hint="Национальность"
+            android:digits="абвгдеёжзийклмнопрстуфхцчшщъыьэюя АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
+            android:inputType="text"
+            android:maxLength="15"
+            android:textColorHint="#9b92b3"
+            android:textColor="#9b92b3"
+            android:theme="@style/MyEditText"
+            android:textSize="20sp"
+            >
+        </EditText>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username_text_input_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#9b92b3"
+        app:hintTextAppearance="@style/MyEditText"
+        >
+        <EditText
+            android:id="@+id/ed_calendar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date"
+            android:layout_gravity="center"
+            android:hint="Год рождения"
+            android:textColorHint="#9b92b3"
+            android:textColor="#9b92b3"
+            android:theme="@style/MyEditText"
+            android:textSize="20sp"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <Spinner
+            android:id="@+id/spinner_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dropdown"
+            android:popupBackground="#4b405c"
+
+            />
+
+        <ImageView
+            android:id="@+id/spinner_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            android:src="@drawable/ic_dropdawn" />
+
+    </LinearLayout>
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    >
+    <RadioButton
+        android:id="@+id/radioBtnWoman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/woman_ic"
+        android:buttonTint="#9b92b3"
+        />
+    <RadioButton
+        android:id="@+id/radioBtnMan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/man_ic"
+        android:buttonTint="#9b92b3"
+        />
+</RadioGroup>
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dropdown"
+            android:popupBackground="#4b405c"
+
+            />
+
+        <ImageView
+            android:id="@+id/spinner_dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            android:src="@drawable/ic_dropdawn" />
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtLocationAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:focusable="true"
+                    android:textColorHint="#9b92b3"
+                    android:textColor="#9b92b3"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:scrollHorizontally="true"
+                    android:text="Current Marker Address" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/mapFragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="tag_map_fragment" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/centerMarker"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_marker"
+                    android:visibility="gone"
+                    />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_style_enter"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        android:text="Сохранить"
+        android:textColor="#FFFFFF"
+
+        />
+
+
+</LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/back_large_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:visibility="gone"
+        >
+    <ImageView
+        android:id="@+id/large_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+
+        android:visibility="gone"
+        />
+</FrameLayout>
+
+</FrameLayout>

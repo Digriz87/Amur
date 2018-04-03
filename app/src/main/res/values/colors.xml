@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#38395a</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#44455b</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteDark">#38395a</color>
+    <color name="colorAccentTwo">#C535ED</color>
+    <color name="colorAccentThree">#695e9d</color>
+
+    <color name="actionbar_opacity">#33000000</color>
+
+</resources>

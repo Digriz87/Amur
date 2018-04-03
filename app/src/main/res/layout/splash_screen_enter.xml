@@ -1,0 +1,223 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <com.yqritc.scalablevideoview.ScalableVideoView
+            android:id="@+id/video_view"
+            android:layout_width="800dp"
+            android:layout_height="match_parent"
+            app:scalableType="fitCenter"
+
+           />
+    </FrameLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo" />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="138dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+
+            android:text="@string/welcome_text_one"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+
+
+            android:text="@string/welcome_text_two"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="121dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginTop="278dp"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutOne"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColorHint="#FFFFFF"
+            android:theme="@style/MyEditText">
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:hint="@string/edit_text_email"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:textSize="18sp"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayout"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColorHint="#FFFFFF"
+            android:theme="@style/MyEditText"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorWhite">
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/edit_text_password"
+                android:inputType="textPassword"
+
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="408dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style_trasparent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/button_enter"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_style"
+            android:drawableLeft="@drawable/facebook"
+            android:gravity="center"
+            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/button_facebook"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:text="@string/text_registration"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textSendPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:text="@string/text_send_password"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="57dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="75"
+
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="100"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4" />
+</android.support.constraint.ConstraintLayout>

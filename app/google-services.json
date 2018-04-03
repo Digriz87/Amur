@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "761305239363",
+    "firebase_url": "https://amur-12a8f.firebaseio.com",
+    "project_id": "amur-12a8f",
+    "storage_bucket": "amur-12a8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761305239363:android:623a51a9ab2fe437",
+        "android_client_info": {
+          "package_name": "com.app.amur.amur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761305239363-0if4g7s1eufm5ie9i9rcivqfs93apo6c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.amur.amur",
+            "certificate_hash": "cdc8b64b8c517e752ece7808210883e0a4682fd4"
+          }
+        },
+        {
+          "client_id": "761305239363-s5ln9tv0ku7vjd603sv5pjnc4tdp3vm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9-8kJFIlYGkEBWIs-HKyLYa7D3jiZQmI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761305239363-s5ln9tv0ku7vjd603sv5pjnc4tdp3vm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
